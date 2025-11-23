@@ -15,6 +15,11 @@ function App() {
         <li>
           <a href="/src/pages/image-compressor/image-compressor.html">Image Compressor</a>
         </li>
+        <li>
+          <a href="/tools/palette/index.html" target="_blank" rel="noreferrer">
+            Color Palette Generator
+          </a>
+        </li>
         {/* add more links as needed */}
       </ul>
     </main>
