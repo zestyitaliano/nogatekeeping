@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Case Converter</title>
+    <link rel="stylesheet" type="text/css" href="https://nogatekeeping.com/wp-content/themes/salient-child/ng/case-converter/case-converter.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="options">
+        <button id="sentence-case-btn">Sentence Case</button>
+        <button id="lowercase-btn">lower case</button>
+        <button id="uppercase-btn">UPPER CASE</button>
+        <button id="capitalize-btn">Capitalized Case</button>
+        <button id="alternating-case-btn">aLtErNaTiNg CASE</button>
+        <button id="titlecase-btn">Title Case</button>
+        <button id="inverse-case-btn">InVeRSE Case</button>
+      </div>
+      <textarea
+        class="text-input"
+        id="text-input"
+        placeholder="Enter your text here..."
+      ></textarea>
+      <div class="counters">
+        <span id="char-count">Characters: 0</span>
+        <span id="word-count">Words: 0</span>
+        <span id="sentence-count">Sentences: 0</span>
+        <span id="line-count">Lines: 0</span>
+      </div>
+      <hr id="lineBreak">
+      <div id="break-line"></div>
+      <div class="actions" id="actions">
+        <button id="copy-btn">Copy to Clipboard</button>
+        <button id="download-btn">Download Text</button>
+        <button id="clear-btn">Clear Text</button>
+      </div>
+    </div>
+
+    <script src="https://nogatekeeping.com/wp-content/themes/salient-child/ng/case-converter/case-converter.js"></script>
+  </body>
+</html>

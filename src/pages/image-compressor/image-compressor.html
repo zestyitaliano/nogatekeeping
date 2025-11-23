@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compressor</title>
+    <link rel="stylesheet" href="https://nogatekeeping.com/wp-content/themes/salient-child/ng/image-compressor/multi-image-compressor.css">
+</head>
+<body>
+    <div id="fileInputContainer" class="file-input-container">
+        <div id="fileUploadArea" class="file-upload-area">
+            <label for="fileInput" class="custom-file-upload">Upload Images</label>
+            <input type="file" id="fileInput" class="file-input" accept="image/*" multiple>
+            <p id="dragDropText">Or<br>Drag And Drop Your Images Here</p>
+        </div>
+    </div>
+
+    <div id="compressingMessage" style="display: none;">Compressing images, please wait...</div>
+
+    <div id="previewContainer" class="preview-container">
+        <!-- Preview images will be displayed here -->
+    </div>
+
+    <div class="breakLine"></div>
+
+    <div id="btnSection">
+        <button id="clearBtn" class="compress-btn">Clear</button>
+        <button id="downloadAllBtn" class="download-link" style="display: none;">Download All</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/browser-image-compression@2.0.2/dist/browser-image-compression.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://nogatekeeping.com/wp-content/themes/salient-child/ng/image-compressor/multi-image-compressor.js"></script>
+</body>
+</html>

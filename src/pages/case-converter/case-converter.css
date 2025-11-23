@@ -1,0 +1,119 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  margin: 0;
+  font-family: "Syne", sans-serif;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.container {
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  width: 100%;
+}
+
+.text-input {
+  width: calc(100% - 22px);
+  padding: 20px;
+  border: 2px dashed #efefef;
+  border-radius: 0px;
+  font-size: 16px;
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+}
+
+.counters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.options button {
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  background-color: #efefef;
+  border: none;
+  color: #111111;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+}
+
+.options button:hover {
+  background-color: #e7e7e7;
+}
+
+#break-line {
+  padding: 10px;
+}
+
+#lineBreak {
+  border: solid 1px;
+  color: #efefef;
+}
+
+.actions button {
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  background-color: #1982c4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.actions button:hover {
+  background-color: #166ea4;
+}
+
+#copy-btn {
+  background-color: #1982c4;
+}
+
+#copy-btn:hover {
+  background-color: #166ea4;
+}
+
+#download-btn {
+  background-color: #ffca3a;
+
+}
+
+#download-btn:hover {
+  background-color: #dbae31;
+
+}
+
+#clear-btn {
+  background-color: #ff595e;
+
+}
+
+#clear-btn:hover {
+  background-color: #df4f53;
+
+}

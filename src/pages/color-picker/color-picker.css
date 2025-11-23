@@ -1,0 +1,173 @@
+h1 {
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  margin: 0;
+  font-family: "Syne", sans-serif;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+#magnifier {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: none; /* Initially no border */
+  background-color: transparent;
+  pointer-events: none;
+  border-radius: 100px;
+  display: block;
+  z-index: 9999;
+}
+
+#fileInputContainer {
+  text-align: center;
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10% 10% 3% 10%;
+  border: dashed #efefef;
+  border-width:2px;
+  border-radius: 0px;
+  background-color: #ffffff;
+  color: #111111;
+  cursor: pointer;
+  width: 100%;
+}
+
+#fileInputContainer:hover {
+    background-color: #f9f9f9;
+}
+
+#fileInputContainer.dragover {
+    background-color: #f9f9f9;
+}
+
+#fileInput {
+  margin-bottom: 10px;
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #111111;
+}
+
+#uploadButton {
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0px;
+  background-color: #efefef;
+  color: #111111;
+  cursor: pointer;
+}
+
+#uploadButton:hover {
+  background-color: #e7e7e7;
+}
+
+#dragDropText {
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+#imageCanvas {
+  display: none;
+  margin-top: 20px;
+  cursor: crosshair;
+  border: 2px solid #ffffff;
+}
+
+#colorInfo {
+  margin-top: 30px;
+  display: inline-block;
+}
+
+#selected-color {
+    float: left;
+    margin-right: 10px;
+}
+
+#colorCode {
+  width: 150px;
+  font-size: 16px;
+  padding: 9px;
+  border: 2px solid #e3e3e3;
+  border-radius: 0px;
+}
+
+#copyButton {
+  margin-left: 10px;
+  font-family: "Syne", sans-serif;
+  font-weight: 600; /* Semibold font weight */
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0px;
+  background-color: #1982c4;
+  color: #fff;
+  cursor: pointer;
+}
+
+#copyButton:hover {
+  background-color: #146fa7;
+}
+
+#fileInput::file-selector-button {
+  font-family: "Syne", sans-serif;
+  font-weight: 600; /* Semibold font weight */
+  border: none;
+  padding: 10px 20px;
+  margin-right: 20px;
+}
+
+#clearButton {
+  margin-left: 10px;
+  font-family: "Syne", sans-serif;
+  font-weight: 600; /* Semibold font weight */
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0px;
+  background-color: #ff595e;
+  color: #fff;
+  cursor: pointer;
+}
+
+#clearButton:hover {
+  background-color: #e24d52;
+}
+
+.preview-boxes {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  display: flex;
+}
+
+.color-box {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  border: 2px solid #efefef;
+}
+
+#hoverPreviewBox {
+  background-color: transparent;
+}
+
+#selectedPreviewBox {
+  background-color: transparent;
+}

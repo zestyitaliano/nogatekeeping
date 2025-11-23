@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://nogatekeeping.com/wp-content/themes/salient-child/ng/color-picker/color-picker.css" />
+  </head>
+  <body>
+    <div id="magnifier"></div>
+    <div id="fileInputContainer" accept="image/*">
+      <label for="fileInput" id="uploadButton">Upload A File</label>
+      <input type="file" id="fileInput" id="fileName" accept="image/*" style="display: none;"/>
+      <p id="fileName"></p>
+      <p id="dragDropText">Or<br><br>Drag and Drop Your File Here</p>
+    </div>    
+    <canvas id="imageCanvas" willReadFrequently></canvas>
+    <div id="colorInfo">
+      <p id="selected-color">Selected Color:</p>
+      <input type="text" id="colorCode" readonly />
+      <button id="copyButton">Copy</button>
+      <button id="clearButton">Clear</button>
+      <div class="preview-boxes">
+        <div id="hoverPreviewBox" class="color-box"></div>
+        <div id="selectedPreviewBox" class="color-box"></div>
+      </div>
+    </div>
+
+    <script src="https://nogatekeeping.com/wp-content/themes/salient-child/ng/color-picker/color-picker.js"></script>
+  </body>
+</html>

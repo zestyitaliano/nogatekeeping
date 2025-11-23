@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proportion Scaler</title>
+    <link rel="stylesheet" href="https://nogatekeeping.com/wp-content/themes/salient-child/ng/proportion-scaler/proportion-scaler.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <label for="originalWidth">Original Width:</label>
+            <input type="number" id="originalWidth" placeholder="Enter original width">
+        </div>
+        <div>
+            <label for="originalHeight">Original Height:</label>
+            <input type="number" id="originalHeight" placeholder="Enter original height">
+        </div>
+        <div>
+            <label for="dimensionType">Choose New Dimension:</label>
+            <select id="dimensionType">
+                <option value="width">New Width</option>
+                <option value="height">New Height</option>
+            </select>
+        </div>
+        <div>
+            <label for="newDimensionValue">New Value:</label>
+            <input type="number" id="newDimensionValue" placeholder="Enter new value">
+        </div>
+        <div>
+            <hr id="lineBreak">
+        </div>
+        <div>
+            <button id="calculateButton" onclick="calculateProportional()">Calculate</button>
+            <button id="copyWidthButton" onclick="copyDimension('width')">Copy Width</button>
+            <button id="copyHeightButton" onclick="copyDimension('height')">Copy Height</button>
+            <button id="clearButton" onclick="clearValues()">Clear</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="https://nogatekeeping.com/wp-content/themes/salient-child/ng/proportion-scaler/proportion-scaler.js"></script>
+</body>
+
+</html>

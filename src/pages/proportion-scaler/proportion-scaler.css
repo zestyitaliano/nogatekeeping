@@ -1,0 +1,93 @@
+body {
+    font-family: "Syne", sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    margin: 0;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    word-wrap: break-word;
+}
+
+input[type="number"] {
+    width: 100%;
+    border: 2px solid #efefef;
+    padding: 2%;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    font-family: "Syne", sans-serif;
+    font-weight: 600;
+}
+
+#calculateButton,
+#copyWidthButton,
+#copyHeightButton,
+#clearButton {
+    font-family: "Syne", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+#calculateButton {
+    background-color: #1982c4;
+    color: #fff;
+}
+
+#calculateButton:hover {
+    background-color: #126aa0;
+}
+
+#clearButton {
+    background-color: #ff595e;
+    color: #fff;
+}
+
+#clearButton:hover {
+    background-color: #e24d52;
+}
+
+#copyWidthButton {
+    background-color: #ffca3a;
+    color: #fff;
+}
+
+#copyWidthButton:hover {
+    background-color: #e0b132;
+}
+
+#copyHeightButton {
+    background-color: #8ac926;
+    color: #fff;
+}
+
+#copyHeightButton:hover {
+    background-color: #71a51d;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    color: #111111;
+}
+
+#lineBreak {
+    border: solid 1.5px #efefef;
+    margin-bottom: 5%;
+}
+
+#dimensionType {
+    border: solid 1.5px #efefef;
+    margin-bottom: 5%;
+}
