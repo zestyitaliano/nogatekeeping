@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { Tool } from '../types';
+import { Tool } from '../types/tools';
 import { ArrowUpRight } from 'lucide-react';
 
 interface ToolTileProps {
