@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Designer Tools Suite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Syne', 'sans-serif'],
+            },
+            boxShadow: {
+              'lift': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      /* 
+        Advanced Entrance Animation 
+        Uses CSS variables for multi-directional slide.
+      */
+      @keyframes fly-in-multi {
+        0% {
+          opacity: 0;
+          transform: translate3d(var(--enter-x, 0), var(--enter-y, 100px), 0) scale(0.9);
+          filter: blur(4px);
+        }
+        100% {
+          opacity: 1;
+          transform: translate3d(0, 0, 0) scale(1);
+          filter: blur(0);
+        }
+      }
+
+      .animate-fly-in-multi {
+        /* 
+           0.8s duration
+           Heavy cubic-bezier for the "snap" / "slide" effect
+           'backwards' fill-mode ensures the element starts at the 0% keyframe state 
+           (invisible and translated) before the delay finishes.
+        */
+        animation: fly-in-multi 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0) backwards;
+      }
+      
+      /* Hide scrollbar for the internal grid container to keep it clean */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-50 text-gray-900 antialiased selection:bg-blue-200">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
